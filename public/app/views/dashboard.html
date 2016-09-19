@@ -1,13 +1,32 @@
-<h3 ng-show='data.food < 50'> Food Level: Low
-</h3>
-<h3 ng-show='data.food > 50 && data.food < 150'> Food Level: Medium
-</h3>
-<h3 ng-show='data.food > 150'> Food Level: High as shit MF'r
-</h3>
+<div class="container-fluid nav-bar-style">
+  <div class="row">
+    <div class="col-md-2 col-md-offset-1 col-xs-12">
+      <!-- <a href="#/">Home</a> -->
+    </div>
+    <div class="col-md-2 col-md-offset-7 col-xs-12">
+      <a href="#/">Sign Out</a>
+    </div>
+  </div>
 
-<h3 ng-show='data2.water < 50'> Water Level: Low
-</h3>
-<h3 ng-show='data2.water > 50 && data2.water < 150'> Water Level: Medium
-</h3>
-<h3 ng-show='data2.water > 150'> Water Level: High as Ballz
-</h3>
+<div class="row">
+  <div class="col-md-3 col-md-offset-2 dashboard-text">
+    Food Level:
+
+    <h3 ng-show='data.food < 50'>Low -- Time to Refill!
+    </h3>
+    <h3 ng-show='data.food > 50 && data.food < 150'>Medium -- Probably OK for now!
+    </h3>
+    <h3 ng-show='data.food > 150'>Your pet is well cared for and has much food!
+    </h3>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2 dashboard-text">
+    Water Level:
+    <h3 ng-show='data2.water < 50'>Low -- Time to Refill!
+    </h3>
+    <h3 ng-show='data2.water > 50 && data2.water < 150'>Medium -- Dehydration is not yet a concern
+    </h3>
+    <h3 ng-show='data2.water > 150'> No thirsty animals here!
+    </h3>
+  </div>
+</div>

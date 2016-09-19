@@ -8,11 +8,11 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="app/css/style.css">
   </head>
   <body>
     <!-- Nav bar -->
-    <nav class="navbar navbar-default">
+    <!-- <nav class="navbar navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -26,9 +26,7 @@
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <!-- <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li> -->
-            <li><a href="#">Get Started</a></li>
-            <!-- <li><a href="#">Link</a></li> -->
+            <li><a href="#/dashboard">Dashboard</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#">Sign Up</a></li>
@@ -36,11 +34,15 @@
               </ul>
             </li>
           </ul>
-        </div><!-- /.navbar-collapse -->
+        </div>
       </nav>
-    </div><!-- /.container-fluid -->
-    <div class="container-fluid">
+    </div> -->
 
+    <div class="container-fluid">
+      <header>
+        <p class="header">Kibble Counter</p>
+      </header>
+      
       <div ui-view>
       </div>
     </div>
@@ -62,12 +64,12 @@
 
     <!-- Firebase -->
     <script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
     <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase-database.js"></script>
-    <script>
-    // Initialize Firebase
+    <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase-database.js"></script> -->
+<!-- Initialize Firebase -->
+    <!-- <script>
     var config = {
       apiKey: "AIzaSyB5uxlLVnCeHOh3SFUKFORb_A6FRKMquig",
       authDomain: "kibblecounter.firebaseapp.com",
@@ -75,7 +77,7 @@
       storageBucket: "kibblecounter.appspot.com",
     };
     firebase.initializeApp(config);
-    </script>
+    </script> -->
 
     <!--Angular Fire  -->
     <script src="https://cdn.firebase.com/libs/angularfire/1.2.0/angularfire.min.js"></script>
