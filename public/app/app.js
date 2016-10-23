@@ -23,7 +23,7 @@ function config($stateProvider, $urlRouterProvider) {
         })
         .state('login', {
             url: '/login',
-            controller: 'LoginController',
+            controller: 'AuthController',
             templateUrl: 'app/views/login.html'
         })
         .state('signup', {

@@ -19,23 +19,11 @@ function LoginController ($scope, $firebaseAuth){
         });
       }
 
-      //create new user with email/pw
-      var ref = new Firebase("https://<YOUR-FIREBASE-APP>.firebaseio.com");
-      ref.createUser({
-        email    : "bobtony@firebase.com",
-        password : "correcthorsebatterystaple"
-      }, function(error, userData) {
-        if (error) {
-          console.log("Error creating user:", error);
-        } else {
-          console.log("Successfully created user account with uid:", userData.uid);
-        }
-      });
       //log in with email/pw
-      var ref = new Firebase("https://<YOUR-FIREBASE-APP>.firebaseio.com");
+      var ref = new Firebase("https://kibblecounter.firebaseio.com");
         ref.authWithPassword({
-        email    : "bobtony@firebase.com",
-        password : "correcthorsebatterystaple"
+        email    : " ",
+        password : " "
       }, function(error, authData) {
         if (error) {
           console.log("Login Failed!", error);
@@ -43,6 +31,12 @@ function LoginController ($scope, $firebaseAuth){
           console.log("Authenticated successfully with payload:", authData);
         }
 });
-
-
+      var ref = new Firebase("https://kibblecounter.firebaseio.com");
+        ref.onAuth(function(authData){
+          if (authData) {
+            //user logged in
+          } else {
+            //user logged out
+          }
+        })
     }
